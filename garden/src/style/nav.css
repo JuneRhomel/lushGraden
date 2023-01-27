@@ -1,0 +1,86 @@
+header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation ul {
+    display: none;
+
+}
+.nav {
+    position: relative;
+}
+.active-nav {
+    display: flex !important;
+    position: absolute;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    left: 0;
+    bottom: -30px;
+    animation-name: nav-animation;
+    animation-duration: 2s ;
+
+}
+@keyframes nav-animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.navigation ul a {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: var(--secondary-text);
+    transition: .3s ease-in-out;
+}
+
+.logo {
+    width: 7em;
+}
+.navigation ul button {
+    background-color: transparent;
+    border-radius: 2.34px;
+    font-size: 18px;
+    border: none;
+    color: var(--secondary-text);
+}
+.navigation ul a:hover {
+    padding-bottom: 10px;
+    border-bottom: 1.2px solid var(--secondary-text);
+}
+.menu-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+    color: var(--secondary-text);
+}
+@media only screen and (min-width:1300px) {
+    .navigation ul {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        width: 10em;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .navigation ul button {
+        background-color: transparent;
+        height: 45px;
+        width: 150px;
+        border-radius: 2.34px;
+        font-size: 18px;
+        border: 1px solid var(--secondary-text);
+        color: var(--secondary-text);
+    }
+}
