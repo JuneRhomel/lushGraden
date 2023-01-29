@@ -1,18 +1,33 @@
 import React, { useState } from 'react'
 import Img1 from "../assets/image 1.jpg"
 import Img2 from "../assets/image 2.jpg"
+import Img3 from "../assets/image 3.jpg"
 import "../style/hero.css"
 export default function Hero() {
-    const [bgImg, setBgImg] = useState(1)
+    const [bgImg, setBgImg] = useState(0)
 
 
-    const img = [Img1, Img2 ]
+    const img = [
+        {
+            id: 1,
+            img: Img1
+        },
+        {
+            id: 2,
+            img: Img2
+        },
+        {
+            id: 3,
+            img: Img3
+        }
+    ]
 
-    console.log(img)
+
     return (
         <section className='hero-section'>
+
             <div className='hero-img'>
-                <img src={Img1} alt="" />
+                <img src={img[bgImg].img} alt="" />
             </div>
             <div className='hero-txt'>
                 <div >
@@ -24,7 +39,11 @@ export default function Hero() {
                 </div>
                 </div>
             </div>
-
+            <div className='carosel-btn'>
+            <button className={bgImg==0? "carosel-btn-focus" : "none"}  onClick={e => setBgImg(0) }>01</button>
+            <button className={bgImg==1? "carosel-btn-focus" : "none"}  onClick={e => setBgImg(1)}>02</button>
+            <button className={bgImg==2? "carosel-btn-focus" : "none"}  onClick={e => setBgImg(2)}>03</button>
+            </div>
         </section>
     )
 }
