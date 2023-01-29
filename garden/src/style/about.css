@@ -1,4 +1,6 @@
-
+.about-section {
+    margin: 10em 0;
+}
 
 .about-box {
     display: flex;

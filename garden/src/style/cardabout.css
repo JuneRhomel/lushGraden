@@ -1,6 +1,8 @@
 .cards {
     display: flex;
     justify-content: center;
+    flex-direction: column;    
+    align-items: center;
     gap: 50px;
 }
 
@@ -8,7 +10,8 @@
     border: 2px solid rgba(0, 0, 0, 0.041);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.055);
     border-radius: 10px;
-    width: 350px;
+    width: 100%;
+    max-width: 650px;
     padding: 0 25px;
     height: 400px;
     display: flex;
@@ -22,4 +25,20 @@
 }
 .cards .center h3,.cards .center p {
     color: var(--secondary-text);
+}
+
+
+@media only screen and (min-width:1000px) {
+    .cards {
+        flex-direction: row;
+        gap: 13px;
+    }
+    .card-about  {
+        width: 350px;
+    }
+}
+@media only screen and (min-width:1237px) {
+    .cards {
+        gap: 50px;
+    }   
 }
