@@ -1,0 +1,20 @@
+
+
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10em 0;
+}
+.about-box .h-tag {
+    font-size: 23px;
+    flex-basis: 40%;
+}
+.about-box .p-tag {
+    flex-basis: 55%;
+}
+.about-box .p-tag p {
+    line-height: 150%;
+    color: var( --primary-text);
+    font-weight: 500;
+}

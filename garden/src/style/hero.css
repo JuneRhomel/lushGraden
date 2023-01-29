@@ -80,7 +80,7 @@
     background-color: transparent;
     border: none;
     font-weight: 700;
-    font-size: 2em;
+    font-size: 1.5em;
     cursor: pointer;
 }
 .carosel-btn-focus {
@@ -90,7 +90,7 @@
     color: var(--primary-color) !important;
 }
 
-@media only screen and (min-width:1300px) {
+@media only screen and (min-width:1444px) {
     .btn-div {
         gap: 25px;
     }

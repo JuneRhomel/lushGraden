@@ -1,0 +1,25 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-about {
+    border: 2px solid rgba(0, 0, 0, 0.041);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.055);
+    border-radius: 10px;
+    width: 350px;
+    padding: 0 25px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    line-height: 150%;
+}
+.cards .center {
+    background-color: var(--primary-color);
+}
+.cards .center h3,.cards .center p {
+    color: var(--secondary-text);
+}

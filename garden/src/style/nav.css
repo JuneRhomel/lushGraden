@@ -3,6 +3,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99999;
+    background-color: rgba(57, 168, 113, 0.205);
 }
 .navigation {
     display: flex;

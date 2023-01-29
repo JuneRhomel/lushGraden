@@ -27,11 +27,25 @@ h1 {
 
 h2 {
   font-family: 'Lato';
-  font-weight: 400;
-  font-size: 16.0316px;
+  font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.04em;
   text-transform: capitalize;
+  color: var(--primary-color);
+}
+h3 {
+  font-family: 'Lato';
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: var(--primary-text);
+  opacity: 0.8;
 }
 
 .heading-p {
@@ -69,5 +83,6 @@ button {
   .container {
     width: 70%;
     margin: auto;
+    max-width: 1572px;
   }
 }
