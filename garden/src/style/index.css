@@ -59,7 +59,7 @@ p {
 }
 
 button {
-  font-weight: 700;
+  font-weight: 800;
   font-family: 'Lato', sans-serif;
 }
 .container {
@@ -91,6 +91,6 @@ b  {
   .container {
     width: 70%;
     margin: auto;
-    max-width: 1272px;
+    max-width: 1300px;
   }
 }

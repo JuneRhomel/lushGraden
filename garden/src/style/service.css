@@ -1,0 +1,38 @@
+.grid-service {
+    display: grid;
+    grid-template-areas: 
+    "a a b c"
+    "a a d e";
+}
+.grid-service .left-img {
+    width: 100%;
+    height: 50em;
+    object-fit: cover;
+}
+.box1{grid-area: a;}
+.box2{
+    grid-area: b;
+    background: #FCFCFC;
+}
+.box3{
+    grid-area: c;
+    background: #f3f3f3;
+}
+.box4{
+    grid-area: d;
+    background: #f3f3f3;
+
+}
+.box5{
+    grid-area: e;
+    background: #FCFCFC;
+}
+
+.grid-service .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+padding: 1em;
+}

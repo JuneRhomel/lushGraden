@@ -17,8 +17,99 @@ export default function Plantscard() {
                     </div>
                     <button>Buy Now</button>
                 </div>
+            </article>  
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
             </article>
-
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            <article className='plant-card'>
+                <div className='plant-img'>
+                <img src={Plant1} alt="" />
+                </div>
+                <div className='plant-text'>
+                    <div>
+                    <h3>Cactus Plant</h3>
+                    <small>($10)</small>
+                    <b>$8</b>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+            </article>
+            
         </div>
     )
 }
