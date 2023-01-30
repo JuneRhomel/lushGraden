@@ -1,0 +1,72 @@
+.offer-section h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: 800;
+    font-size: 40px;
+}
+.offer-section {
+    margin: 10em 0;
+}
+
+.plant-card {
+    border: 1px solid rgba(0, 0, 0, 0.041);
+    border-radius: 10px;
+    box-shadow: 4.45322px 4.45322px 8.90645px rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+}
+
+.plant-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 1.6em;
+}
+
+.plant-img {
+    height: 290px;
+    overflow: hidden;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03));
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.041);
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.041);
+}
+
+.plant-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.plant-text small {
+    color: var(--primary-text);
+    opacity: 0.5;
+    padding-right: 10px;
+}
+.plant-text small ,.plant-text b {
+    font-size: 15px;
+}
+.plant-text button {
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border: 1.8px solid rgba(51, 122, 91, 0.6);
+    color: var(--primary-color);
+    transition: .2s ease-in-out;
+    
+}
+.plant-text button:hover{
+
+    border: 1.8px solid rgba(51, 122, 91, 0.6);
+    background-color: var(--primary-color);
+    color: var(--secondary-text);
+}
+.plant-text h3 {
+    margin-bottom: 7px;
+}
+.all-plants {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 30px;
+
+}

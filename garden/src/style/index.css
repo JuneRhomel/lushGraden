@@ -66,6 +66,14 @@ button {
   width: 90%;
   margin: auto;
 }
+small,b {
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+}
+b  {
+  font-weight: 700;
+  color: var(--primary-color);
+}
 
 @media only screen and (min-width:1200px) {
   .container {
