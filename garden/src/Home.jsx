@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Gallery from "./components/Gallery"
 import Hero from "./components/Hero"
 import Nav from "./components/Nav"
 import Offer from "./components/Offer"
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <Offer/>
       <Service/>
+      <Gallery/>
     </div>
   )
 }
