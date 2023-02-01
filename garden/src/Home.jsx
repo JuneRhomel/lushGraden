@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Nav from "./components/Nav"
 import Offer from "./components/Offer"
 import Service from "./components/Service"
+import Testimonial from "./components/Testimonial"
 import './style/index.css'
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Offer/>
       <Service/>
       <Gallery/>
+      <Testimonial/>
     </div>
   )
 }

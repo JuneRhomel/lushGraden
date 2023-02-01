@@ -44,7 +44,7 @@
     display: none;
 }
 .service-box  img {
-    width: 150px;
+    width: 50px;
     object-fit: contain;
 }
 .service-box  h3 {
@@ -69,5 +69,9 @@
     }
     .grid-service .box {
         padding: 50px;
+    }
+    .service-box  img {
+        width: 150px;
+        object-fit: contain;
     }
 }

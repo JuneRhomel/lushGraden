@@ -1,0 +1,56 @@
+.testimonial-section {
+    margin: 10em 0;
+}
+.testimonial-section h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.testimonial .person img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+}
+.testimonial .person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.testimonial {
+    display: flex;
+    gap: 2em;
+}
+.testimonial .card {
+    background-color: #F8F8F8;
+    padding: 2.2em;
+    height: 400px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4.45322px;
+    
+    
+}
+.testimonial .card:nth-child(1){
+    background-image: url("../assets/Zz_Plant1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+.testimonial .card:nth-child(2){
+    background-image: url("../assets/Snake_Plant1.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+.testimonial .card:nth-child(3){
+    background-image: url("../assets/Bamboo 258.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 300px;
+}
+
+.testimonial .card p {
+    line-height: 150%;
+}

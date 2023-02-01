@@ -7,7 +7,7 @@ import img5 from "../assets/img5.png"
 import "../style/Gallery.css"
 export default function Gallery() {
   return (
-    <section>
+    <section className='gallery-section'>
         
         <h2>Our Gallery View</h2>
         <div className='grid-img '>

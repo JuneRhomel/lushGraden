@@ -2,7 +2,6 @@
     text-align: center;
     margin-bottom: 2em;
     font-weight: 800;
-    font-size: 40px;
 }
 .offer-section {
     margin: 10em 0;
@@ -69,4 +68,11 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 
+}
+
+@media only screen and (min-width:1100px) { 
+
+    .offer-section h2  {
+        font-size: 40px;
+    }
 }
