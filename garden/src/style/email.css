@@ -1,0 +1,81 @@
+.section-email {
+    margin: 10em 0;
+    width: 100%;
+    height: 20em;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../assets/bg-email.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .section-email img {
+    object-fit: cover;
+    width: 100%;
+    height: 20em;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+} */
+.section-email .container {
+    height: 100%;
+}
+
+.center-email {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+.section-email h2 {
+   
+    color: var(--secondary-text);
+}
+.section-email form {
+    width: 100%;
+}
+.section-email input {
+    padding-left: 10px;
+    height: 50px;
+    width: 68%;
+    background: rgba(217, 217, 217, 0.03);
+    border: 0.445322px solid #FFFFFF;
+    backdrop-filter: blur(1.11331px);
+    outline: none;
+    color: var(--secondary-text);
+    font-size: 18px;
+    border-radius: 5px;
+}
+.section-email button {
+    width: 30%;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--secondary-text);
+    border: none;
+    margin-left: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.section-email input::placeholder {
+    color: var(--secondary-text);
+    font-family: 'Raleway';
+    font-size: 18px;
+}
+@media only screen and (min-width:1000px) { 
+    .center-email{
+        flex-direction: row;
+    }
+    .section-email h2  {
+        flex-basis: 40%;
+    }
+    .section-email form {
+        flex-basis: 60%;
+    }
+    .section-email button {
+        margin-left: 10px;
+    }
+}

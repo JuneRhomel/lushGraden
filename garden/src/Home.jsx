@@ -1,4 +1,6 @@
 import About from "./components/About"
+import Blog from "./components/Blog"
+import Email from "./components/email"
 import Gallery from "./components/Gallery"
 import Hero from "./components/Hero"
 import Nav from "./components/Nav"
@@ -17,6 +19,8 @@ function App() {
       <Service/>
       <Gallery/>
       <Testimonial/>
+      <Email/>
+      <Blog/>
     </div>
   )
 }
