@@ -32,7 +32,7 @@
     gap: 2em;
 }
 .section-email h2 {
-   
+    font-size: 20px;
     color: var(--secondary-text);
 }
 .section-email form {
@@ -65,6 +65,13 @@
     font-family: 'Raleway';
     font-size: 18px;
 }
+@media only screen and (min-width:800px) { 
+
+    .section-email h2  {
+        font-size: 35px;
+    }
+
+}
 @media only screen and (min-width:1000px) { 
     .center-email{
         flex-direction: row;
@@ -73,7 +80,7 @@
         flex-basis: 40%;
     }
     .section-email form {
-        flex-basis: 60%;
+        flex-basis: 55%;
     }
     .section-email button {
         margin-left: 10px;
