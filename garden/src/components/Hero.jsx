@@ -6,7 +6,7 @@ import "../style/hero.css"
 export default function Hero() {
     const [bgImg, setBgImg] = useState(0)
 
-
+    
     const img = [
         {
             id: 1,
@@ -21,6 +21,13 @@ export default function Hero() {
             img: Img3
         }
     ]
+    setInterval(function() {
+        if(bgImg == 2 ) {
+            setBgImg(0) 
+        } else {
+            setBgImg(bgImg +  1) 
+        }
+    }, 8000);
 
 
     return (

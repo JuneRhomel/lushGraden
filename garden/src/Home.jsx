@@ -1,6 +1,7 @@
 import About from "./components/About"
 import Blog from "./components/Blog"
 import Email from "./components/email"
+import Footer from "./components/Footer"
 import Gallery from "./components/Gallery"
 import Hero from "./components/Hero"
 import Nav from "./components/Nav"
@@ -21,6 +22,7 @@ function App() {
       <Testimonial/>
       <Email/>
       <Blog/>
+      <Footer/>
     </div>
   )
 }
