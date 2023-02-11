@@ -2,6 +2,7 @@ import React from 'react'
 import Plantscard from './Plantscard'
 
 export default function Offer() {
+    console.log({value})
     return (
         <section className='offer-section'>
             <div className="container">

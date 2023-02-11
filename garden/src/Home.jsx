@@ -9,10 +9,13 @@ import Offer from "./components/Offer"
 import Service from "./components/Service"
 import Testimonial from "./components/Testimonial"
 import './style/index.css'
+import DataContext from "./Context/Data"
+import  Plant from "./Context/PlantData"
 function App() {
 
   return (
     <div className="App">
+      <DataContext.Provider value={Plant} >
       <Nav/>
       <Hero/>
       <About/>
@@ -23,6 +26,7 @@ function App() {
       <Email/>
       <Blog/>
       <Footer/>
+      </DataContext.Provider>
     </div>
   )
 }
