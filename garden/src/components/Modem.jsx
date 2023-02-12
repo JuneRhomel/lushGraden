@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Star from "../assets/Star 1.svg"
 import "../style/ModemPlants.css"
 
@@ -6,6 +6,15 @@ export default function Modem({ value, closeBtn }) {
   const [opneTap, setOpenTab] = useState(true)
   const [imgDisplay, setImgDisplay ] = useState(0)
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      imgDisplay === 2? setImgDisplay(0):setImgDisplay(imgDisplay +1)
+    }, 3000);
+
+    return () => {
+        clearInterval(intervalId);
+    };
+}, [imgDisplay]);
 
   return (
     <div className='Modem-bg'>
