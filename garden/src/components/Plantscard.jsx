@@ -10,14 +10,13 @@ export default function Plantscard() {
     // const openPlant =(plantItem) => {
     //     setPlantModem(plantItem)
     // }
-
     return (
         <div className='all-plants'>
             {dispayPlant.map(item => {
                 return (
                     <article className='plant-card' key={item.id}>
                         <div className='plant-img'>
-                            <img src={item.img} alt="" />
+                            <img src={item.img[0]} alt="" />
                         </div>
                         <div className='plant-text'>
                             <div>

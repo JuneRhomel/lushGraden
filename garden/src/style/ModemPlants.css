@@ -1,0 +1,268 @@
+.Modem-bg {
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 49, 35, 0.2);
+    /* border-radius: 16px; */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+.Modem {
+    position: relative;
+    border-radius: 10px;
+    width: 95%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 2em;
+    background-color: #ffffff;
+    padding: 1em;
+    max-height: 90vh;
+    overflow: auto;
+}
+.Modem img {
+    width: 100%;
+}
+.all-img{
+    max-width: 30em;
+    margin: auto;
+}
+.Modem .all-img {
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.Modem .sub-img {
+    width: 100%;
+    height: 8em;
+    display: flex;
+    justify-content: space-between;
+}
+.Modem .sub-img img {
+    width: 30%;
+    object-fit: cover;
+}
+.Modem .all-img .main-img {
+    width: 100%;
+    height: 25em;
+    object-fit: cover;
+}
+.Modem .desctiption {
+    flex-basis: 55%;
+}
+.desctiption .img-star {
+    display: flex;
+    gap: 4px;
+}
+.desctiption .img-star img{
+    width: 15px;object-fit: contain;
+}
+.desctiption .title h3 {
+    font-size: 20px;
+}
+.desctiption small {
+    text-decoration: line-through;
+    color: var(--primary-text);
+    opacity: 0.5;
+    font-size: 13px;
+}
+.desctiption b {
+    font-size: 17px;
+}
+.desctiption .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.desctiption .head {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+}
+.desctiption .head button {
+    height: 40px;
+    width: 100px;
+    background-color: var(--primary-color);
+    border:none;
+    color: var(--secondary-text);
+    border-radius: 10px;
+    font-size: 15px;
+}
+.desctiption .nav-body {
+    margin: 2em 0 1em;
+    padding-bottom: 15px;
+    border-bottom: 1.6px solid #CACACA;
+}
+.desctiption .nav-body ul {
+    display: flex;
+    gap: 2em;
+}
+
+.desctiption .nav-body ul li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.desctiption .nav-body ul li span {
+    background-color: var(--primary-color);
+    padding: 5px 8px;
+    border-radius: 4px;
+    color: var(--secondary-text);
+}
+.nav-body .active {
+    opacity: 1 !important;
+}
+.description-text p {
+    line-height: 150%;
+}
+.comment {
+    display: flex;
+    gap: 15px;
+}
+.comment img {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1.5px solid var(--primary-color);
+}
+.comment-txt {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+}
+.comment-txt p {
+    font-size: 13px;
+}
+.comment-box {
+    padding: 10px;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+.input-commnet  {
+    margin-top: 1em;
+}
+.input-commnet form {
+    display: flex;
+    justify-content: space-between;
+}
+.input-commnet input {
+    outline: none;
+    border: 1px solid var(--primary-color);
+
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 68%;
+}
+.input-commnet button {
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-text);
+    font-size: 14px;
+    height: 50px;
+    width: 30%;
+}
+.closeBtn {
+    top: 15px;
+    right: 40px;
+    z-index: 99;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-text);
+    font-size: 16px;
+}
+.closeBtn:hover {
+    transition: ease-in-out .2s;
+    color: var(--primary-color);
+}
+@media only screen and (min-width:1500px ) {
+    .Modem  {
+        width: 80%;
+    }
+}
+@media only screen and (min-width:800px ) {
+    .Modem  {
+        flex-direction: row;
+        padding: 2em;
+    }
+    .all-img{
+        max-width: none;
+    }
+    .comment-txt p {
+        font-size: 15px;
+        line-height: 150%;
+    } 
+    .comment img {
+        width: 50px;
+        height: 50px;
+
+    }
+    .desctiption .title h3 {
+        font-size: 35px;
+    }
+    .desctiption small {
+        text-decoration: line-through;
+        color: var(--primary-text);
+        opacity: 0.5;
+        font-size: 20px;
+    }
+    .desctiption b {
+        font-size: 25px;
+    }
+    .desctiption .img-star img{
+        width: 25px;
+    }
+    .desctiption .head button {
+        height: 55px;
+        width: 200px;
+        font-size: 18px;
+    }
+    .desctiption .head {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .input-commnet button {
+        font-size: 17px;
+        height: 50px;
+        width: 19%;
+    }
+    .closeBtn {
+        top: 15px;
+        right: 40px;
+        z-index: 99;
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--primary-text);
+        font-size: 16px;
+    }
+    .input-commnet input {
+
+        width: 79%;
+    }
+    .input-commnet button {
+        width: 20%;
+    }
+}

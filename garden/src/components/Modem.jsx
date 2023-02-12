@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import Star from "../assets/Star 1.svg"
+import "../style/ModemPlants.css"
 
 export default function Modem({ value, closeBtn }) {
   const [opneTap, setOpenTab] = useState(true)
+  const [imgDisplay, setImgDisplay ] = useState(0)
 
 
   return (
@@ -10,11 +12,11 @@ export default function Modem({ value, closeBtn }) {
       <div className='Modem'>
         <button className='closeBtn' onClick={closeBtn}><i class="fa-solid fa-caret-left"></i> Back</button>
         <div className='all-img'>
-          <img className='main-img' src={value.img} alt="" />
+          <img className='main-img' src={value.img[imgDisplay]} alt="" />
           <div className='sub-img'>
-            <img src={value.img} alt="" />
-            <img src={value.img} alt="" />
-            <img src={value.img} alt="" />
+            <img onClick={()=>setImgDisplay(0)} src={value.img[0]} alt="" />
+            <img onClick={()=>setImgDisplay(1)} src={value.img[1]} alt="" />
+            <img onClick={()=>setImgDisplay(2)} src={value.img[2]} alt="" />
           </div>
         </div>
 
@@ -24,14 +26,11 @@ export default function Modem({ value, closeBtn }) {
             <div className='title'>
               <h3>{value.title}</h3>
               <div className='img-star'>
-                <img src={Star} alt="" />
-                <img src={Star} alt="" />
-                <img src={Star} alt="" />
-                <img src={Star} alt="" />
+                {Array(value.rate).fill(1).map((i) => <img src={Star} alt="" key={Math.random()} />)}
               </div>
               <div>
                 <small>(${value.originPrize})</small>
-                <b>${value.prize}</b>
+                <b>${value.prize.toString()}</b>
               </div>
             </div>
             <button>Buy Now</button>
@@ -47,52 +46,27 @@ export default function Modem({ value, closeBtn }) {
               </nav>
             </div>
             {opneTap ?
-              <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae molestiae ducimus eligendi amet odio quas, aperiam libero sunt iste eaque qui quibusdam numquam labore maiores earum pariatur illum ipsa inventore. </p>
+              <div className='description-text'>
+                <p>{value.description}</p>
               </div>
               :
               <>
                 <div className='comment-box' >
-                  <div className='comment'>
-                    <img src={value.img} alt="" />
-                    <div className='comment-txt'>
-                      <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, laborum consequatur fuga quis aspernatur, repellat unde eius nostrum, sunt corporis fugiat debitis. Eius enim pariatur suscipit consequatur minus similique iure! adipisicing elit. Doloremque eius aperiam nemo consequuntur aliquid veniam facilis cumque accusantium. </p>
-                    </div>
-                  </div>
-                  <div className='comment'>
-                    <img src={value.img} alt="" />
-                    <div className='comment-txt'>
-                      <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, laborum consequatur fuga quis aspernatur, repellat unde eius nostrum, sunt corporis fugiat debitis. Eius enim pariatur suscipit consequatur minus similique iure! adipisicing elit. Doloremque eius aperiam nemo consequuntur aliquid veniam facilis cumque accusantium. </p>
-                    </div>
-                  </div>
-                  <div className='comment'>
-                    <img src={value.img} alt="" />
-                    <div className='comment-txt'>
-                      <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, laborum consequatur fuga quis aspernatur, repellat unde eius nostrum, sunt corporis fugiat debitis. Eius enim pariatur suscipit consequatur minus similique iure! adipisicing elit. Doloremque eius aperiam nemo consequuntur aliquid veniam facilis cumque accusantium. </p>
-                    </div>
-                  </div>
-                  <div className='comment'>
-                    <img src={value.img} alt="" />
-                    <div className='comment-txt'>
-                      <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, laborum consequatur fuga quis aspernatur, repellat unde eius nostrum, sunt corporis fugiat debitis. Eius enim pariatur suscipit consequatur minus similique iure! adipisicing elit. Doloremque eius aperiam nemo consequuntur aliquid veniam facilis cumque accusantium. </p>
-                    </div>
-                  </div>
-                  <div className='comment'>
-                    <img src={value.img} alt="" />
-                    <div className='comment-txt'>
-                      <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, laborum consequatur fuga quis aspernatur, repellat unde eius nostrum, sunt corporis fugiat debitis. Eius enim pariatur suscipit consequatur minus similique iure! adipisicing elit. Doloremque eius aperiam nemo consequuntur aliquid veniam facilis cumque accusantium. </p>
-                    </div>
-                  </div>
 
-                  <div className='comment'>
-                    <img src={value.img} alt="" />
-                    <div className='comment-txt'>
-                      <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, laborum consequatur fuga quis aspernatur, repellat unde eius nostrum, sunt corporis fugiat debitis. Eius enim pariatur suscipit consequatur minus similique iure! adipisicing elit. Doloremque eius aperiam nemo consequuntur aliquid veniam facilis cumque accusantium. </p>
-                    </div>
-                  </div>
+                  {value.comment.map((i) => {
+                    return (
+                      <div className='comment' key={i.id}>
+                        <img src={i.user} alt="" />
+                        <div className='comment-txt'>
+                          <p>{i.text}</p>
+                        </div>
+                      </div>
+                    )
+                  })}
+
                 </div>
                 <div className='input-commnet'>
-                  <form onSubmit={(e)=> e.preventDefault()} >
+                  <form onSubmit={(e) => e.preventDefault()} >
                     <input type="text" placeholder='Add Commnet...' />
                     <button>Submit</button>
                   </form>
