@@ -1,5 +1,4 @@
 import React from 'react'
-import EmailBg from "../assets/bg-email.png"
 import "../style/email.css"
 export default function Email() {
     return (

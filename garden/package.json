@@ -8,6 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "host": "vite --host"
+    
   },
   "dependencies": {
     "react": "^18.2.0",
