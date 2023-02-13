@@ -5,8 +5,6 @@ import Img3 from "../assets/image 3.jpg"
 import "../style/hero.css"
 export default function Hero() {
     const [bgImg, setBgImg] = useState(0)
-
-
     const img = [
         {
             id: 1,
