@@ -23,10 +23,10 @@ export default function Nav() {
             <nav>
                 <button onClick={navMenu} className='menu-btn'><i class="fa-solid fa-bars"></i></button>
                 <ul>
-                    <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/plantsers">Planters</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/login">Log In</Link></li>
+                    <li><Link to="/">Planters</Link></li>
+                    <li><Link to="/">Contact</Link></li>
                     <button>Call Us</button>
                 </ul>
             </nav>

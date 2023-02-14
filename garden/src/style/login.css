@@ -1,0 +1,25 @@
+.login-section {
+    width: 100%;
+    height: 100vh;
+   background: linear-gradient(180deg, rgba(40, 90, 67, 0.34) 0%, rgba(40, 90, 67, 0.34) 47.92%, rgba(40, 90, 67, 0.102) 100%);
+   display: flex;
+   align-items: center;
+   justify-content:center;
+}
+.login-section .login-box {
+    background-color: var(--secondary-text);
+    padding: 1em;
+    width: 40em;
+    height: 25em;
+}
+.login-section form input {
+    font-size: 17px;
+    height: 40px;
+    width: 100%;
+}
+.login-section .input-box {
+    margin-top: 20px;
+}
+.login-section  .btn-submit{
+    margin-top: 1em;
+}
